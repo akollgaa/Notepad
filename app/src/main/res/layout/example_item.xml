@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/card_background">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_event_note_black"/>
+
+        <ImageView
+            android:id="@+id/trashcan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete_black" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_marginEnd="80dp"
+            android:singleLine="true"
+            android:text="@string/title_text_card"
+            android:textColor="@android:color/black"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/subText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_below="@id/titleText"
+            android:layout_marginStart="36sp"
+            android:layout_marginEnd="80dp"
+            android:maxLines="2"
+            android:text="@string/title_text_card"
+            android:ellipsize="end"
+            android:textColor="@color/card_description"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

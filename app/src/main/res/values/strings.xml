@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="title_text_card">Title</string>
+    <string name="subtext_card">description</string>
+    <string name="hint_bodyText">Start Typing Here</string>
+    <string name="hint_titleText">Title</string>
+    <string name="save_button_text">Save</string>
+</resources>

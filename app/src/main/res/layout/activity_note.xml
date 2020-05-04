@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".note">
+
+    <include
+        android:id="@+id/note_toolbar"
+        layout="@layout/note_toolbar"/>
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint_titleText"
+        android:inputType="textCapWords"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/note_toolbar"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.05"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button_text"
+        android:textStyle="bold"
+        android:background="@color/saveButton"
+        android:elevation="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/bodyFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/noteTitle"
+        app:layout_constraintTop_toBottomOf="@+id/note_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/bodyFrame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noteTitle">
+
+        <EditText
+            android:id="@+id/noteBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@android:color/transparent"
+            android:ems="15"
+            android:hint="@string/hint_bodyText"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

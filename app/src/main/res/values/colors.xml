@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="notebook_toolbar_background">#ffc20d</color>
+    <color name="notebook_toolbar_text">#28334A</color>
+    <color name="toolbarStatusBar">#e8b41a</color>
+
+    <color name="card_background">#60c4c3</color>
+    <color name="card_description">#75000000</color>
+
+    <color name="saveButton">#60c4c3</color>
+    <color name="floatingButton">#60c4c3</color>
+</resources>

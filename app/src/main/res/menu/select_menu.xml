@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cancel"
+        android:icon="@drawable/ic_cancel_black"
+        android:title="Cancel" />
+    <item
+        android:id="@+id/selectAll"
+        android:icon="@drawable/ic_check_box_black"
+        android:title="Select All" />
+    <item
+        android:id="@+id/unselectAll"
+        android:icon="@drawable/ic_check_box_outline_blank_black"
+        android:title="Deselect All" />
+    <item
+        android:id="@+id/deleteSelected"
+        android:icon="@drawable/ic_delete_black"
+        android:title="Delete Selected" />
+</menu>
